@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
 	<meta name="author" content="PAG">
 	<link rel="canonical" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
@@ -279,22 +279,55 @@
       margin-left: -1095px;
     }
     .main section.page2 .page_container {
-      margin-top: 240px;
+      top: 10%;
+      margin-top: 10px;
       overflow: hidden;
+    }
+    .main section.page2 .note{
+      margin: 0;
+      margin-top: 2px;
+      overflow: hidden;
+      font-size: 10px;
+      color: #ddd;
+      font-weight: 100;
+    }
+    .main section.page2 .note a {
+      font-weight: bold;
+      color: #bbb;
+    }
+    .main section.page2 .note a:hover,
+    .main section.page2 .note a:focus {
+      text-decoration: underline;
     }
     .main section.page2 h1 {
       text-align: center;
       padding: 0;
       margin-bottom: 15px;
-      font-size: 50px;
+      font-size: 60px;
       letter-spacing: -1px;
       color: white;
+      font-weight: 800;
     }
     .main section.page2 h2 {
+      margin-bottom: 50px;
       color: rgba(255,255,255,0.85);
       text-align: center;
       line-height: 160%;
-      font-weight: 100;
+      font-weight: 600;
+    }
+    .main section.page2 h3 {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 5px;
+      text-align: center;
+      line-height: 100%;
+      font-weight: 700;
+    }
+    .main section.page2 ul {
+      display: inline-block;
+      text-align: left;
+      margin: 0 auto;
+      color: rgba(255,255,255,0.85);
+      font-weight: 400;
     }
     .viewing-page-2 .back{
       background: rgba(0, 0, 0, 0.25);
@@ -349,24 +382,35 @@
   	    <img src="images/logo.jpg" alt="pag">
       </section>
 	    
-	    <!-- <section class="page2 ">
+	    <section class="page2 ">
 	      <div class="page_container">
-          <h1>Ready-to-use plugin</h1>
-          <h2>All you need is an HTML markup, call the script and BAM!</h2>
-          <code class="html">
+          <h1>Activities</h1>
+          <h2>You ask what else do we do other that programming?</h2>
+          <!-- <code class="html">
   	        &lt;div class="main"&gt;<br>
   	          &lt;section&gt;...&lt;/section&gt;<br>
   	          &lt;section&gt;...&lt;/section&gt;<br>
   	          ...<br>
   	        &lt;/div&gt;
-  	      </code>
-  	      <code class="js">
-	          $(".main").onepage_scroll();
-	        </code>
+  	      </code> -->
+          <h3>Conduct CodeBlitz - the intra-campus programming competition.</h3>
+          <div class="note">(Conducted on the platform <a href="https://codevillage.sdslabs.co.in">CodeVillage</a>)</div>
+          <h3>Open lectures</h3>
+          <div class="note">(From Sorting and searching to FFT)</div>
+          <h3>Organize programming competitions like</h3>
+          <ul>
+            <li>Insomnia</li>
+            <li>CodeBlitz</li>
+            <li>Logicode</li>
+            <li>MathGenii</li>
+          </ul>
+          <div class="note">(<b>Insomnia</b> is conducted over the internet and witnesses international participation, even from <b>Red Coders</b>)</div>
+          <h3>Weekly Problems</h3>
+          <div class="note">(to fuel your brain, find them <a href="https://www.facebook.com/sdspag">here</a>)</div>
 	      </div>
       </section>
 	    
-	    <section class="page3">
+	    <!-- <section class="page3">
 	      <div class="page_container">
           <h1>Pretty Neat Eh?</h1>
           <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>

@@ -209,13 +209,22 @@
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       background: rgba(255, 255, 255, 0.25);
-      font-weight: bold;
       font-size: 13px;
       color: #000;
       -webkit-transition: all 500ms ease-in-out;
       -moz-transition: all 500ms ease-in-out;
       -o-transition: all 500ms ease-in-out;
       transition: all 500ms ease-in-out;
+    }
+    .back a {
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 13px;
+      color: rgba(10, 10, 10, 0.7);
+    }
+    .back a:hover,
+    .back a:focus {
+      text-decoration: underline;
     }
     .back:hover {
       color: black;
@@ -270,7 +279,8 @@
       text-align: center;
     }
     .main section.page2 {
-      background: #555557 url(back-phone.png) no-repeat center -150px ;
+      background-color: #555557;
+      /*background: #555557 url(back-phone.png) no-repeat center -150px ;*/
     }
     .main section.page2 > img {
       position: absolute;
@@ -288,8 +298,11 @@
       margin-top: 2px;
       overflow: hidden;
       font-size: 10px;
-      color: #ddd;
+      color: #aaa;
       font-weight: 100;
+    }
+    .main section.page2 .note b {
+      color: #efefef;
     }
     .main section.page2 .note a {
       font-weight: 900;
@@ -343,7 +356,7 @@
       color: #FFF;
       }
     .main section.page3 {
-      background:url(tilted-phone.png) no-repeat 156px -150px ;
+      /*background:url(tilted-phone.png) no-repeat 156px -150px ;*/
     }
     .main section.page3 .page_container {
       overflow: hidden;
@@ -391,17 +404,10 @@
   	    <img src="images/logo.jpg" alt="pag">
       </section>
 	    
-	    <section class="page2 ">
+	    <section class="page2 activity">
 	      <div class="page_container">
           <h1>Activities</h1>
           <h2>You ask what else do we do other that programming?</h2>
-          <!-- <code class="html">
-  	        &lt;div class="main"&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          ...<br>
-  	        &lt;/div&gt;
-  	      </code> -->
           <code>
             <h3>Conduct CodeBlitz - the intra-campus programming competition.</h3>
             <div class="note">(Conducted on the platform <a href="https://codevillage.sdslabs.co.in">CodeVillage</a>)</div>
@@ -411,7 +417,7 @@
             <div class="note">(From Sorting and searching to FFT)</div>
           </code>
           <code>
-            <h3>Organize programming competitions like </h3>
+            <h3>Organize programming competitions like</h3>
             <ul>
               <li>Insomnia</li>
               <li>CodeBlitz</li>
@@ -422,13 +428,13 @@
           </code>
           <code>
             <h3>Weekly Problems</h3>
-            <div class="note">(to fuel your brain, find them <a href="https://www.facebook.com/sdspag">here</a>)</div>
+            <div class="note">(find them <a href="https://www.facebook.com/sdspag">here</a>)</div>
           </code>
 
 	      </div>
       </section>
 	    
-	    <!-- <section class="page3">
+	    <section class="page3 ">
 	      <div class="page_container">
           <h1>Pretty Neat Eh?</h1>
           <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
@@ -436,10 +442,14 @@
   	        <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
   	      </div>
   	    </div>
-      </section> -->
+      </section>
       
     </div>
-    <a class="back" href="http://pag.sdslabs.co/blog">Blog</a>
+    <div class="back">
+      <a class="" href="#">Home</a>
+      <a class="" href="#2">Activity</a>
+      <a class="" href="http://pag.sdslabs.co/blog">Blog</a>
+    </div>
   </div>
 </body>
 </html>
